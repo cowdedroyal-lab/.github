@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17143d"/>
+      <stop offset="55%" stop-color="#252163"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="15%" cy="50%" r="32%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="88%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="cardClip">
+      <rect x="2" y="2" width="796" height="196" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <!-- Card background -->
+  <g clip-path="url(#cardClip)">
+    <rect x="2" y="2" width="796" height="196" rx="18" fill="url(#bg)"/>
+    <rect x="2" y="2" width="796" height="196" fill="url(#glow)"/>
+    <rect x="2" y="2" width="796" height="196" fill="url(#glowRight)"/>
+
+    <!-- Subtle geometric grid dots -->
+    <g fill="#818cf8" opacity="0.14">
+      <circle cx="580" cy="34" r="1.5"/><circle cx="612" cy="34" r="1.5"/><circle cx="644" cy="34" r="1.5"/><circle cx="676" cy="34" r="1.5"/><circle cx="708" cy="34" r="1.5"/><circle cx="740" cy="34" r="1.5"/><circle cx="772" cy="34" r="1.5"/>
+      <circle cx="612" cy="66" r="1.5"/><circle cx="644" cy="66" r="1.5"/><circle cx="676" cy="66" r="1.5"/><circle cx="708" cy="66" r="1.5"/><circle cx="740" cy="66" r="1.5"/><circle cx="772" cy="66" r="1.5"/>
+      <circle cx="644" cy="98" r="1.5"/><circle cx="676" cy="98" r="1.5"/><circle cx="708" cy="98" r="1.5"/><circle cx="740" cy="98" r="1.5"/><circle cx="772" cy="98" r="1.5"/>
+      <circle cx="676" cy="130" r="1.5"/><circle cx="708" cy="130" r="1.5"/><circle cx="740" cy="130" r="1.5"/><circle cx="772" cy="130" r="1.5"/>
+      <circle cx="708" cy="162" r="1.5"/><circle cx="740" cy="162" r="1.5"/><circle cx="772" cy="162" r="1.5"/>
+    </g>
+
+    <!-- Constellation / node graph accent on right -->
+    <g stroke="#818cf8" stroke-width="1.6" opacity="0.4" fill="none">
+      <path d="M626 154 L678 122 L724 140 L762 94"/>
+      <path d="M678 122 L696 64 L754 50"/>
+      <path d="M696 64 L762 94"/>
+    </g>
+    <g fill="#a5b4fc" opacity="0.65">
+      <circle cx="626" cy="154" r="4"/>
+      <circle cx="678" cy="122" r="5"/>
+      <circle cx="724" cy="140" r="3.5"/>
+      <circle cx="762" cy="94" r="4.5"/>
+      <circle cx="696" cy="64" r="4"/>
+      <circle cx="754" cy="50" r="3.5"/>
+    </g>
+    <!-- One golden highlight node -->
+    <circle cx="696" cy="64" r="7.5" fill="none" stroke="#fbbf24" stroke-width="1.4" opacity="0.7"/>
+    <circle cx="696" cy="64" r="3" fill="#fbbf24"/>
+
+    <!-- Subtle left badge circle behind emblem -->
+    <circle cx="116" cy="100" r="64" fill="#1e1b4b" fill-opacity="0.55" stroke="#6366f1" stroke-opacity="0.35" stroke-width="1.5"/>
+
+    <!-- Crowned cow emblem (scaled & centered at 116, 100) -->
+    <g transform="translate(46, 30) scale(0.273)">
+      <!-- crown -->
+      <path d="M176 150 L196 92 L226 130 L256 78 L286 130 L316 92 L336 150 Z" fill="#fbbf24"/>
+      <rect x="176" y="146" width="160" height="16" rx="4" fill="#f59e0b"/>
+      <circle cx="196" cy="92" r="8" fill="#fbbf24"/>
+      <circle cx="256" cy="78" r="9" fill="#fbbf24"/>
+      <circle cx="316" cy="92" r="8" fill="#fbbf24"/>
+      <!-- horns -->
+      <path d="M168 196 C130 190 110 160 116 132 C134 158 156 168 184 172 Z" fill="#f8fafc"/>
+      <path d="M344 196 C382 190 402 160 396 132 C378 158 356 168 328 172 Z" fill="#f8fafc"/>
+      <!-- ears -->
+      <ellipse cx="140" cy="236" rx="44" ry="22" transform="rotate(-20 140 236)" fill="#e2e8f0"/>
+      <ellipse cx="372" cy="236" rx="44" ry="22" transform="rotate(20 372 236)" fill="#e2e8f0"/>
+      <!-- head -->
+      <path d="M176 176 Q256 152 336 176 Q362 250 340 330 L172 330 Q150 250 176 176 Z" fill="#f8fafc"/>
+      <!-- eyes -->
+      <circle cx="216" cy="246" r="13" fill="#1e1b4b"/>
+      <circle cx="296" cy="246" r="13" fill="#1e1b4b"/>
+      <circle cx="220" cy="242" r="4" fill="#f8fafc"/>
+      <circle cx="300" cy="242" r="4" fill="#f8fafc"/>
+      <!-- muzzle -->
+      <rect x="166" y="300" width="180" height="104" rx="52" fill="#fbbf24"/>
+      <ellipse cx="220" cy="350" rx="13" ry="17" fill="#1e1b4b"/>
+      <ellipse cx="292" cy="350" rx="13" ry="17" fill="#1e1b4b"/>
+    </g>
+
+    <!-- Text block -->
+    <text x="208" y="84" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', 'Helvetica Neue', sans-serif" font-size="38" font-weight="700" fill="#f8fafc" letter-spacing="-0.5">Cowdedroyal Lab</text>
+
+    <!-- Gold accent bar -->
+    <rect x="208" y="99" width="48" height="3.5" rx="1.75" fill="#fbbf24"/>
+
+    <text x="208" y="132" font-family="'PingFang SC', -apple-system, BlinkMacSystemFont, 'Hiragino Sans GB', sans-serif" font-size="18.5" font-weight="500" fill="#fcd34d" letter-spacing="1.2">奇思妙想的实验室</text>
+
+    <text x="208" y="160" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="13" font-weight="400" fill="#c7d2fe" opacity="0.9" letter-spacing="0.4">LLM Engineering  ·  Empirical AI Studies  ·  Developer Tools</text>
+  </g>
+
+  <!-- Crisp border for both light & dark GitHub themes -->
+  <rect x="2" y="2" width="796" height="196" rx="18" fill="none" stroke="#6366f1" stroke-opacity="0.4" stroke-width="1.5"/>
+</svg>

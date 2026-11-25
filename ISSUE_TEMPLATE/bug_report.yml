@@ -1,0 +1,37 @@
+name: 问题反馈 (Bug Report)
+description: 报告代码错误、复现失败或异常行为
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 简明说明遇到了什么问题，以及预期行为是什么。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 请给出可以复现的命令、输入或操作步骤。
+      placeholder: |
+        1. 运行 ...
+        2. 出现报错 ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      placeholder: |
+        - OS: macOS / Ubuntu ...
+        - Python / Node / Editor 版本:
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错日志或截图
+      render: shell
+    validations:
+      required: false

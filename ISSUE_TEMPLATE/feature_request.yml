@@ -1,0 +1,18 @@
+name: 功能建议与交流 (Feature / Idea)
+description: 提出新功能、实验想法或改进建议
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 背景与动机
+      description: 这个想法希望解决什么问题，或验证什么假设？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 具体建议
+      description: 期望的实现方式、交互或实验设计。
+    validations:
+      required: false
